@@ -8,7 +8,6 @@ import ScrollButtons from './components/ScrollButtons.vue'
 import { usePokemon } from './composables/usePokemon'
 import type { PokemonListItem } from './types'
 import { getTypeColor } from './utils/pokemonTypes'
-import { lockScroll, unlockScroll } from './utils/scrollLock'
 
 const {
   pokemons,
@@ -29,10 +28,10 @@ const activeType = ref<string | null>(null)
 
 watch(selectedPokemon, (pokemon) => {
   if (pokemon) {
-    lockScroll()
+    document.body.style.overflow = 'hidden'
     activeType.value = pokemon.types[0]?.type.name || null
   } else {
-    unlockScroll()
+    document.body.style.overflow = ''
     activeType.value = null
   }
 })
@@ -78,7 +77,7 @@ const themeClass = computed(() => (isDarkMode.value ? 'dark' : 'light'))
 </script>
 
 <template>
-  <div :class="[themeClass, { 'has-modal': !!selectedPokemon } ]">
+  <div :class="themeClass">
     <DynamicBackground :active-type="activeType" />
     <div class="app-container">
       <AppHeader
@@ -171,11 +170,5 @@ body {
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Optional fallback blur of the main content when modal is open (for browsers without backdrop-filter coverage) */
-.has-modal .app-container {
-  filter: blur(6px) saturate(0.9);
-  transition: filter 0.2s ease;
 }
 </style>
