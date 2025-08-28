@@ -9,7 +9,7 @@
     "eslint.config.*"
   ],
   "compilerOptions": {
-    "composite": true,
+  "composite": true,
     "noEmit": false,
     "emitDeclarationOnly": true,
     "declaration": true,
