@@ -3,12 +3,12 @@
   "include": ["src/**/__tests__/*", "env.d.ts"],
   "exclude": [],
   "compilerOptions": {
-  "composite": true,
-  "noEmit": false,
-  "emitDeclarationOnly": true,
-  "declaration": true,
-  "declarationDir": "./node_modules/.tmp/types/vitest",
-  "allowImportingTsExtensions": false,
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "./node_modules/.tmp/types/vitest",
+    "allowImportingTsExtensions": false,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
 
     "lib": [],
