@@ -26,7 +26,7 @@ This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) th
 The site will be available at:
 
 ```
-https://<your-username>.github.io/<repo-name>/
+https://warman189.github.io/pokedex-vue-ver.1/
 ```
 
 Vite base path is configured via `BASE_PATH` environment variable in the workflow so assets resolve correctly under `/<repo>/`.
