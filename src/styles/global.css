@@ -1,0 +1,38 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #f0f0f0;
+  --border-color: #cccccc;
+  --header-background: #ef5350;
+  --button-background: #f0f0f0;
+  --button-text-color: #000000;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+/* Add more breakpoints for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 5px;
+  }
+}

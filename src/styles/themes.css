@@ -1,0 +1,21 @@
+/* Light Theme (Default) */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-background: #f9f9f9;
+  --border-color: #e0e0e0;
+  --header-background: #dc0a2d;
+  --button-background: #e0e0e0;
+  --button-text-color: #000000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-background: #1e1e1e;
+  --border-color: #424242;
+  --header-background: #333333;
+  --button-background: #424242;
+  --button-text-color: #ffffff;
+}
