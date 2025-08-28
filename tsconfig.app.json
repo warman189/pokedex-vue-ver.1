@@ -5,6 +5,9 @@
   "compilerOptions": {
   "composite": true,
   "noEmit": false,
+  "emitDeclarationOnly": true,
+  "declaration": true,
+  "declarationDir": "./node_modules/.tmp/types/app",
   "allowImportingTsExtensions": false,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
