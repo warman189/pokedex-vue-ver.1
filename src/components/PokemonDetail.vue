@@ -164,11 +164,13 @@ const next = () => emit('next')
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overscroll-behavior: contain;
 }
 
 .pokemon-detail-card {
